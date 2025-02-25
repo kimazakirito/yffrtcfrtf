@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>travel.com</title>
+        <link rel="stylesheet" href="style.css">
+        <nav>
+            <a href="loading.html">หน้าหลัก</a>
+        </nav>
+        <style>
+            /* ปรับวิดีโอให้เต็มหน้าจอ */
+            .video-bg {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                object-fit: cover; /* ทำให้วิดีโอขยายเต็มจอ */
+                z-index: -1; /* ให้วิดีโออยู่ด้านหลัง */
+            }
+    
+            /* ข้อความด้านบนวิดีโอ */
+            .content {
+                position: relative;
+                z-index: 1;
+                color: white;
+                text-align: center;
+                font-size: 2em;
+                font-weight: bold;
+                top: 40vh;
+            }
+    
+            /* ทำให้วิดีโอมีความมืดเล็กน้อยเพื่อให้ข้อความอ่านง่ายขึ้น */
+            .overlay {
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background-color: rgba(0, 0, 0, 0.3); /* พื้นหลังดำโปร่งใส */
+                z-index: 0;
+            }
+        </style>
+    </head>
+    <body class="body1">
+         <!-- วิดีโอพื้นหลัง -->
+    <video class="video-bg" autoplay muted loop>
+        <source src="images/a1.mp4" type="video/mp4">
+        <source src="images/a1.mp4" type="video/ogg">
+    </video>
+
+    </body>
+</html>
